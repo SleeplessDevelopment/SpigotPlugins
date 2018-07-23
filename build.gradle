@@ -1,6 +1,8 @@
-allprojects {
+subprojects {
     apply plugin: 'java'
 
+    libsDirName = "$rootProject.projectDir/builds"
+    distsDirName = "$rootProject.projectDir/builds"
     group = 'net.sleeplessdev.spigot'
     sourceCompatibility = 1.8
 
