@@ -1,5 +1,0 @@
-name: rightclickcrops
-version: @version@
-main: net.sleeplessdev.spigot.RightClickCrops
-authors: [InsomniaKitten]
-api-version: 1.13

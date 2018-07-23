@@ -13,12 +13,18 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.vehicle.VehicleExitEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.bukkit.plugin.java.annotation.plugin.ApiVersion;
+import org.bukkit.plugin.java.annotation.plugin.Plugin;
+import org.bukkit.plugin.java.annotation.plugin.author.Author;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.util.Vector;
 
 import static org.bukkit.potion.PotionEffectType.DAMAGE_RESISTANCE;
 import static org.bukkit.potion.PotionEffectType.INVISIBILITY;
 
+@Plugin(name = "stairsaschairs", version = "@version@")
+@Author("InsomniaKitten")
+@ApiVersion(ApiVersion.Target.v1_13)
 public final class StairsAsChairs extends JavaPlugin implements Listener {
     private static final String CHAIR_ENTITY_ID = "stairsaschairs:chair_entity";
     private static final int MAX_EFFECT_DURATION = 1000000;
