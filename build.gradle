@@ -1,6 +1,16 @@
 import org.apache.tools.ant.filters.ReplaceTokens
 
+buildscript {
+    repositories {
+        maven { url = 'https://plugins.gradle.org/m2' }
+    }
+    dependencies {
+        classpath 'io.franzbecker:gradle-lombok:1.14'
+    }
+}
+
 subprojects {
+    apply plugin: 'io.franzbecker.gradle-lombok'
     apply plugin: 'java'
 
     libsDirName = "$rootProject.projectDir/builds"
@@ -9,6 +19,7 @@ subprojects {
     sourceCompatibility = 1.8
 
     repositories {
+        maven { url = 'https://plugins.gradle.org/m2' }
         maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots' }
         maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
         mavenLocal()
