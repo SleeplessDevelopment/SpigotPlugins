@@ -1,0 +1,5 @@
+name: fastgrasspaths
+version: ${project.version}
+main: net.sleeplessdev.spigot.FastGrassPaths
+authors: [InsomniaKitten]
+api-version: 1.13

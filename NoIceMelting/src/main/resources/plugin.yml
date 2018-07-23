@@ -1,0 +1,5 @@
+name: noicemelting
+version: ${project.version}
+main: net.sleeplessdev.spigot.NoIceMelting
+authors: [InsomniaKitten]
+api-version: 1.13
