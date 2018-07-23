@@ -1,5 +1,5 @@
 name: stairsaschairs
-version: ${project.version}
+version: @version@
 main: net.sleeplessdev.spigot.StairsAsChairs
 authors: [InsomniaKitten]
 api-version: 1.13
