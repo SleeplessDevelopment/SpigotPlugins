@@ -15,7 +15,7 @@ import org.bukkit.plugin.java.annotation.plugin.ApiVersion;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import org.bukkit.plugin.java.annotation.plugin.author.Author;
 
-@Plugin(name = "rightclickcrops", version = "@version@")
+@Plugin(name = "right_click_crops", version = "@version@")
 @Author("InsomniaKitten")
 @ApiVersion(ApiVersion.Target.v1_13)
 public final class RightClickCrops extends JavaPlugin implements Listener {

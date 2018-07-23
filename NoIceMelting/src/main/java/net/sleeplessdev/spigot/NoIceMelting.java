@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.annotation.plugin.ApiVersion;
 import org.bukkit.plugin.java.annotation.plugin.Plugin;
 import org.bukkit.plugin.java.annotation.plugin.author.Author;
 
-@Plugin(name = "noicemelting", version = "@version@")
+@Plugin(name = "no_ice_melting", version = "@version@")
 @Author("InsomniaKitten")
 @ApiVersion(ApiVersion.Target.v1_13)
 public final class NoIceMelting extends JavaPlugin implements Listener {

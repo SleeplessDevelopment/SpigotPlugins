@@ -23,7 +23,7 @@ import org.bukkit.util.Vector;
 import static org.bukkit.potion.PotionEffectType.DAMAGE_RESISTANCE;
 import static org.bukkit.potion.PotionEffectType.INVISIBILITY;
 
-@Plugin(name = "stairsaschairs", version = "@version@")
+@Plugin(name = "stairs_as_chairs", version = "@version@")
 @Author("InsomniaKitten")
 @ApiVersion(ApiVersion.Target.v1_13)
 public final class StairsAsChairs extends JavaPlugin implements Listener {

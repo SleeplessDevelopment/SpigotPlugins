@@ -12,7 +12,7 @@ import org.bukkit.plugin.java.annotation.plugin.author.Author;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
 
-@Plugin(name = "fastgrasspaths", version = "@version@")
+@Plugin(name = "fast_grass_paths", version = "@version@")
 @Author("InsomniaKitten")
 @ApiVersion(ApiVersion.Target.v1_13)
 public final class FastGrassPaths extends JavaPlugin implements Listener {
