@@ -17,13 +17,13 @@ import org.bukkit.potion.PotionEffectType;
 @ApiVersion(ApiVersion.Target.v1_13)
 public final class FastGrassPaths extends JavaPlugin implements Listener {
     @Override
-    public void onEnable() {
-        this.getServer().getPluginManager().registerEvents(this, this);
+    public void onDisable() {
+        HandlerList.unregisterAll((Listener) this);
     }
 
     @Override
-    public void onDisable() {
-        HandlerList.unregisterAll((Listener) this);
+    public void onEnable() {
+        this.getServer().getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler

@@ -31,13 +31,13 @@ public final class StairsAsChairs extends JavaPlugin implements Listener {
     private static final int MAX_EFFECT_DURATION = 1000000;
 
     @Override
-    public void onEnable() {
-        this.getServer().getPluginManager().registerEvents(this, this);
+    public void onDisable() {
+        HandlerList.unregisterAll((Listener) this);
     }
 
     @Override
-    public void onDisable() {
-        HandlerList.unregisterAll((Listener) this);
+    public void onEnable() {
+        this.getServer().getPluginManager().registerEvents(this, this);
     }
 
     @EventHandler
@@ -89,7 +89,8 @@ public final class StairsAsChairs extends JavaPlugin implements Listener {
             world.getNearbyEntities(location, 1.0, 1.0, 1.0).stream()
                 .filter(e -> CHAIR_ENTITY_ID.equals(e.getCustomName()))
                 .filter(e -> e.getPassengers().contains(event.getPlayer()))
-                .findFirst().ifPresent(Entity::remove);
+                .findFirst()
+                .ifPresent(Entity::remove);
         }
     }
 
